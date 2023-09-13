@@ -1,0 +1,108 @@
+<style>
+  fieldset {
+    border: none;
+  }
+</style>
+<form action="/login" method="post">
+  <fieldset>
+    <input type="text" name="username">
+    <input type="password" name="password">
+  </fieldset>
+  <fieldset>
+    <input type="submit" value="Save">
+    <input type="submit" value="Forgot Password" formaction="/forgot">
+  </fieldset>
+</form>
+
+
+<label for="phone">Phone</label>
+<input type="text" id="phone" name="phone_number">
+
+
+<label>Phone
+  <input type="text" name="phone">
+</label>
+
+
+<form action="#" method="post">
+  <fieldset>
+    <h1>Log In</h1>
+    <fieldset>
+      <label for="username">Username</label>
+      <input type="text" name="username" id="username">
+    </fieldset>
+
+    <fieldset>
+    <label for="password">Password</label>
+    <input type="password" name="password" id="password">
+    </fieldset>
+
+    <fieldset>
+      <input type="submit" value="Log In">
+      <input type="submit" value="Delete account"
+            formaction="/account/delete">
+      <input type="submit" value="Forgot Password"
+            formaction="/account/password">
+      <input type="reset" value="Reset">
+    </fieldset>
+  </fieldset>
+</form>
+
+
+<form action="#" method="post">
+  <fieldset>
+    <label>
+      First Name
+      <input type="text" name="first_name" value="John">
+    </label>
+  </fieldset>
+</form>
+
+
+<form action="#" method="post">
+  <fieldset>
+    <label for="password1">Password</label>
+    <input type="password1" name="password1" id="password1"
+           value="Not-good-password" size="35">
+  </fieldset>
+</form>
+
+
+<form action="#" method="post">
+  <fieldset>
+    <label>
+      Email
+      <input type="email" name="email" placeholder="aj@aj.com">
+    </label>
+  </fieldset>
+</form>
+
+
+<form action="#" method="post">
+  <fieldset>
+    <label>
+      Phone Number
+      <input type="tel" name="tel" placeholder="(###) ###-####">
+    </label>
+  </fieldset>
+</form>
+
+
+<form action="#" method="post">
+  <fieldset>
+    <label>
+      <input type="checkbox" name="choice" value="search">
+      Sort search results
+    </label>
+
+    <label>
+      <input type="checkbox" name="choice" value="google" checked>
+      Search on Google
+    </label>
+
+    <label>
+      <input type="checkbox" name="choice" value="recent" checked>
+      Recent results (within last year)
+    </label>
+  </fieldset>
+</form>

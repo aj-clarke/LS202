@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Form Layouts</title>
+    <meta charset="utf-8">
+    <style>
+      body {
+        font: 14px normal Helvetica, Arial, sans-serif;
+      }
+      label {
+        width: 10%;
+        box-sizing: border-box;
+        display: inline-block;
+        padding-right: 20px;
+        vertical-align: middle;
+      }
+      input[type="text"] {
+        width: 90%;
+        height: 40px;
+        font: 14px normal Helvetica, Arial, sans-serif;
+        border: 1px solid #cecece;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      fieldset {
+        width: 100%;
+        border: none;
+        margin: 0;
+        margin-inline: 0;
+        box-sizing: border-box;
+      }
+
+      fieldset:nth-of-type(1n+4) {
+        display: inline-block;
+        padding-right: 20px;
+
+      }
+      fieldset.city {
+        width: 45%;
+      }
+      fieldset.city label {
+        width: 25%;
+      }
+      fieldset.city input {
+        width: 75%;
+      }
+      fieldset.state {
+        width: 15%
+      }
+      fieldset.state label {
+        width: 25%;
+      }
+      fieldset.zipcode {
+        width: 15%;
+        padding-right: 0;
+      }
+      fieldset.zipcode label {
+        width: 25%;
+      }
+
+    </style>
+  </head>
+  <body>
+    <form action="" method="post">
+      <fieldset>
+        <label for="name">Your Name</label><!--
+        --><input type="text" name="name" id="name">
+      </fieldset>
+      <fieldset>
+        <label for="address1">Address</label><!--
+        --><input type="text" name="address1" id="address1">
+      </fieldset>
+      <fieldset>
+        <label for="address2">Address</label><!--
+        --><input type="text" name="address2" id="address2">
+      </fieldset>
+      <fieldset class="city">
+        <label for="city">City</label><!--
+        --><input type="text" name="city" id="city">
+      </fieldset><!--
+      --><fieldset class="state">
+        <label for="state">State</label><!--
+        --><select name="state" id="state">
+              <option>AK</option>
+              <option>AL</option>
+          </select>
+      </fieldset><!--
+      --><fieldset class="zipcode">
+        <label for="zipcode">Zipcode</label><!--
+        --><input type="text" name="zip" id="zip">
+      </fieldset>
+    </form>
+  </body>
+</html>

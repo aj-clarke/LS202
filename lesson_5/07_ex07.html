@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>LS202 - Lesson 5.7 Exercise 7: Search Form</title>
+    <meta charset="utf-8">
+    <style>
+/* 
+      fieldset {
+        font-size: 0;
+        padding: 5px 0 10px 10px;
+      } 
+      
+      label[for="search-text"], label.radio {
+        font-size: 1rem;
+      }
+
+      label[for="search-text"] {
+        padding-right: 5px;
+      }
+
+      label.radio {
+        
+      } */
+    </style>
+  </head>
+  <body>
+    <form action="#" method="get">
+      <fieldset>
+        <label for="search-text">Search for</label>
+        <input type="text" name="search-text" id="search-text">
+    
+        <label class="radio">
+          <input type="radio" name="search-for" value="tv" required>
+          TV
+        </label>
+        <label class="radio">
+          <input type="radio" name="search-for" value="movies" required>
+          Movies
+        </label>
+        <label class="radio">
+          <input type="radio" name="search-for" value="music" required>
+          Music
+        </label>
+
+        <button name="button">Search</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
